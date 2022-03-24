@@ -73,11 +73,11 @@
 .ex-7-img, .ex-8-img{
     transition: all 2s;
 }
-
+/* Soluzione */
 .ex-7-img:hover{
     filter: sepia(0.5) grayscale(0.5);
 }
-
+/* Soluzione */
 .ex-8-img:hover{
     filter: sepia(0.5) grayscale(0.5);
     border-radius: 50px;
@@ -88,7 +88,7 @@
     width: 400px;
     transition: all 1s;
 }
-
+/* Soluzione */
 .ex-9-img:hover{
     filter: sepia(0.5) grayscale(0.5);
     transform: scale(1.5);
@@ -116,7 +116,7 @@
 .ex-11-icon {
     font-size: 60px;
 }
-
+/* Soluzione */
 .ex-11-icon:hover{
     animation-name: semi-rotation;
     animation-duration: 1s;
@@ -163,4 +163,34 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: top-white12;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: bottom-white12;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes top-white12 {
+    0%{
+        left: 10%;
+    }
+    100%{
+        left: 65%
+    }
+}
+
+@keyframes bottom-white12 {
+    0%{
+        right: 20%;
+    }
+    100%{
+        right: 65%;
+    }
 }
